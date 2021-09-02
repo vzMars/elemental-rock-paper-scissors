@@ -3,6 +3,8 @@ let computerSelection;
 let playerSelection;
 let computerScore = 0;
 let playerScore = 0;
+let round = 0;
+let isWinner = false;
 game();
 
 function computerPlay() {
@@ -56,18 +58,21 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-  for (let i = 1; i <= 5; i++) {
-    console.log(`Round ${i}`);
-    roundSetup();
-    console.log(playRound(playerSelection, computerSelection));
-    console.log(`Player: ${playerScore} Computer: ${computerScore}`);
-  }
-  if (playerScore > computerScore) {
-    console.log("Player Wins!");
-  } else if (playerScore < computerScore) {
-    console.log("Computer Wins!");
-  } else {
-    console.log("Tie Game!");
+  while (!isWinner) {
+    if (playerScore === 5 || computerScore === 5) {
+      if (playerScore > computerScore) {
+        console.log("Player Wins!");
+      } else {
+        console.log("Computer Wins!");
+      }
+      isWinner = true;
+    } else {
+      round++;
+      console.log(`Round ${round}`);
+      roundSetup();
+      console.log(playRound(playerSelection, computerSelection));
+      console.log(`Player: ${playerScore} Computer: ${computerScore}`);
+    }
   }
 }
 
