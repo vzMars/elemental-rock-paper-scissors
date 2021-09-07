@@ -4,7 +4,7 @@ let playerSelection;
 let computerScore = 0;
 let playerScore = 0;
 let round = 0;
-let isWinner = false;
+let winner = false;
 game();
 
 function computerPlay() {
@@ -58,14 +58,14 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-  while (!isWinner) {
+  while (!winner) {
     if (playerScore === 5 || computerScore === 5) {
       if (playerScore > computerScore) {
         console.log("Player Wins!");
       } else {
         console.log("Computer Wins!");
       }
-      isWinner = true;
+      winner = true;
     } else {
       round++;
       console.log(`Round ${round}`);
