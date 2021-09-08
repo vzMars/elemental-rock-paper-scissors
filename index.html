@@ -3,44 +3,47 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <title>Fire Grass Water</title>
     <link href="styles/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
     <header id="header">
-      <h1>
+      <img id="pokemon-logo" src="images/pokemon-logo.png" />
+      <h1 id="title">
         <span class="redText">Fire</span>
         <span class="greenText">Grass</span>
         <span class="blueText">Water</span>
       </h1>
-      <p>
-        <span class="redText">Fire</span> beats
-        <span class="greenText">Grass</span> |
-        <span class="greenText">Grass</span> beats
-        <span class="blueText">Water</span> |
-        <span class="blueText">Water</span> beats
-        <span class="redText">Fire</span>
-      </p>
     </header>
     <main id="main-content">
       <div id="player-choice-container">
         <button data-choice="Fire" class="types">
-          <img src="images/fire-1.png" />
+          <img src="images/fire-1.png" class="types" />
         </button>
         <button data-choice="Grass" class="types">
-          <img src="images/grass-1.png" />
+          <img src="images/grass-1.png" class="types" />
         </button>
         <button data-choice="Water" class="types">
-          <img src="images/water-1.png" />
+          <img src="images/water-1.png" class="types" />
         </button>
       </div>
       <div id="battle-container">
         <div id="player-section">
-          <img src="images/red.png" alt="trainer-red" />
+          <img src="images/red.png" class="players-pokemon" alt="trainer-red" />
           <div id="player-pokemon">
             <p>Player's Pokemon</p>
-            <img src="images/hidden1.png" alt="whos-that-pokemon-player" />
+            <img
+              src="images/hidden1.png"
+              class="players-pokemon"
+              alt="whos-that-pokemon-player"
+            />
           </div>
         </div>
         <div id="battle-section">
@@ -49,10 +52,18 @@
           <p>Battle description</p>
         </div>
         <div id="rival-section">
-          <img src="images/blue.png" alt="trainer-blue" />
+          <img
+            src="images/blue.png"
+            class="players-pokemon"
+            alt="trainer-blue"
+          />
           <div id="rival-pokemon">
             <p>Rival's Pokemon</p>
-            <img src="images/hidden2.png" alt="whos-that-pokemon-rival" />
+            <img
+              src="images/hidden2.png"
+              class="players-pokemon"
+              alt="whos-that-pokemon-rival"
+            />
           </div>
         </div>
       </div>
@@ -60,7 +71,10 @@
     <footer id="">
       <p>
         <a href="https://github.com/vzMars"
-          ><img src="images/GitHub-Mark-120px-plus.png" alt="github-logo" /></a
+          ><img
+            src="images/GitHub-Mark-120px-plus.png"
+            id="logo"
+            alt="github-logo" /></a
         >Created by <a href="https://github.com/vzMars">Marcos Gonzalez.</a>
       </p>
     </footer>

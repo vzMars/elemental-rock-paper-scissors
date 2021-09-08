@@ -1,1 +1,57 @@
+:root {
+  --red: rgb(217, 33, 41);
+  --green: rgb(35, 136, 66);
+  --blue: rgb(25, 175, 228);
+}
 
+body {
+  font-family: "Skranji", cursive;
+  margin: 0;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid green;
+}
+
+#pokemon-logo {
+  max-width: 80%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#title {
+  font-size: 36px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.redText {
+  color: var(--red);
+}
+
+.greenText {
+  color: var(--green);
+}
+
+.blueText {
+  color: var(--blue);
+}
+
+.types {
+  max-width: 60%;
+  height: auto;
+}
+
+.players-pokemon {
+  max-width: 60%;
+  height: auto;
+}
+
+#logo {
+  max-width: 10%;
+  height: auto;
+}
