@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
     <link href="styles/style.css" rel="stylesheet" />
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <script src="scripts/main.js"></script>
+    <header id="header">
+      <h1>
+        <span class="redText">Fire</span>
+        <span class="greenText">Grass</span>
+        <span class="blueText">Water</span>
+      </h1>
+      <p>
+        <span class="redText">Fire</span> beats
+        <span class="greenText">Grass</span> |
+        <span class="greenText">Grass</span> beats
+        <span class="blueText">Water</span> |
+        <span class="blueText">Water</span> beats
+        <span class="redText">Fire</span>
+      </p>
+    </header>
+    <main id="main-content">
+      <div id="player-choice-container">
+        <button data-choice="Fire" class="types">
+          <img src="images/fire-1.png" />
+        </button>
+        <button data-choice="Grass" class="types">
+          <img src="images/grass-1.png" />
+        </button>
+        <button data-choice="Water" class="types">
+          <img src="images/water-1.png" />
+        </button>
+      </div>
+      <div id="battle-container">
+        <div id="player-section">
+          <img src="images/red.png" alt="trainer-red" />
+          <div id="player-pokemon">
+            <p>Player's Pokemon</p>
+            <img src="images/hidden1.png" alt="whos-that-pokemon-player" />
+          </div>
+        </div>
+        <div id="battle-section">
+          <p>Battle: 0</p>
+          <p>Player Score: 0 | Rival Score: 0</p>
+          <p>Battle description</p>
+        </div>
+        <div id="rival-section">
+          <img src="images/blue.png" alt="trainer-blue" />
+          <div id="rival-pokemon">
+            <p>Rival's Pokemon</p>
+            <img src="images/hidden2.png" alt="whos-that-pokemon-rival" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="">
+      <p>
+        <a href="https://github.com/vzMars"
+          ><img src="images/GitHub-Mark-120px-plus.png" alt="github-logo" /></a
+        >Created by <a href="https://github.com/vzMars">Marcos Gonzalez.</a>
+      </p>
+    </footer>
   </body>
 </html>

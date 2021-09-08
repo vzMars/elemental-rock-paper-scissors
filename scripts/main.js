@@ -5,29 +5,29 @@ let computerScore = 0;
 let playerScore = 0;
 let round = 0;
 let winner = false;
-game();
+//game();
 
 function computerPlay() {
   if (randomNumber === 1) {
-    return "Rock";
+    return "Fire";
   } else if (randomNumber === 2) {
-    return "Paper";
+    return "Grass";
   } else {
-    return "Scissors";
+    return "Water";
   }
 }
 
 function playerPlay() {
-  let tempSelection = capitalize(prompt("Rock, Paper or Scissors?"));
+  let tempSelection = capitalize(prompt("Fire, Grass or Water?"));
   console.log(`Temp Selection is ${tempSelection}`);
   if (
-    tempSelection === "Rock" ||
-    tempSelection === "Paper" ||
-    tempSelection === "Scissors"
+    tempSelection === "Fire" ||
+    tempSelection === "Grass" ||
+    tempSelection === "Water"
   ) {
     return tempSelection;
   } else {
-    console.log("Wrong choice pick only rock, paper or scissors!");
+    console.log("Wrong choice pick only fire, grass or water!");
     return playerPlay();
   }
 }
@@ -40,15 +40,15 @@ function capitalize(str) {
 }
 
 function playRound(playerSelection, computerSelection) {
-  if (playerSelection === "Rock" && computerSelection === "Paper") {
+  if (playerSelection === "Grass" && computerSelection === "Fire") {
     computerScore++;
-    return "You Lose! Paper beats Rock";
-  } else if (playerSelection === "Paper" && computerSelection === "Scissors") {
+    return "You Lose! Fire beats Grass";
+  } else if (playerSelection === "Water" && computerSelection === "Grass") {
     computerScore++;
-    return "You Lose! Scissors beats Paper";
-  } else if (playerSelection === "Scissors" && computerSelection === "Rock") {
+    return "You Lose! Grass beats Water";
+  } else if (playerSelection === "Fire" && computerSelection === "Water") {
     computerScore++;
-    return "You Lose! Rock beats Scissors";
+    return "You Lose! Water beats Fire";
   } else if (playerSelection === computerSelection) {
     return `It's a tie! ${playerSelection} is equal to ${computerSelection}`;
   } else {
