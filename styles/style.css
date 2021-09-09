@@ -1,20 +1,25 @@
 :root {
+  --redBG: rgb(219, 10, 45);
+  --whiteBG: rgb(222, 222, 222);
+  --grayBG: rgb(88, 88, 88);
   --red: rgb(217, 33, 41);
   --green: rgb(35, 136, 66);
   --blue: rgb(25, 175, 228);
+  --black: rgb(0, 0, 0);
 }
 
 body {
   font-family: "Skranji", cursive;
   margin: 0;
+  background-color: var(--redBG);
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border: 3px solid green;
 }
 
 #pokemon-logo {
@@ -23,10 +28,18 @@ body {
   padding: 10px;
 }
 
-#title {
-  font-size: 36px;
+h1 {
+  font-size: 40px;
   text-align: center;
-  margin: 5px 0;
+  margin: 0;
+  color: var(--black);
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  color: var(--black);
 }
 
 .redText {
@@ -41,14 +54,89 @@ body {
   color: var(--blue);
 }
 
-.types {
-  max-width: 60%;
+#main-content {
+  background-color: var(--whiteBG);
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid var(--whiteBG);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#player-choice-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.choice {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#battle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.player-rival-section {
+  border: 3px solid var(--black);
+  border-radius: 5px;
+  display: flex;
+  background-color: var(--grayBG);
+}
+
+.trainer-box {
+  display: flex;
+}
+
+.trainer-img {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+.trainer-pokemon-box {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 5px;
+}
+
+.pokemon-img {
+  max-width: 100%;
   height: auto;
 }
 
-.players-pokemon {
-  max-width: 60%;
-  height: auto;
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  color: var(--black);
+  font-size: 15px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 #logo {

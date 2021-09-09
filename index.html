@@ -16,32 +16,35 @@
   <body>
     <header id="header">
       <img id="pokemon-logo" src="images/pokemon-logo.png" />
-      <h1 id="title">
-        <span class="redText">Fire</span>
-        <span class="greenText">Grass</span>
-        <span class="blueText">Water</span>
-      </h1>
+      <h1>Elemental</h1>
+      <h2>Rock–Paper–Scissors</h2>
     </header>
     <main id="main-content">
       <div id="player-choice-container">
-        <button data-choice="Fire" class="types">
-          <img src="images/fire-1.png" class="types" />
-        </button>
-        <button data-choice="Grass" class="types">
-          <img src="images/grass-1.png" class="types" />
-        </button>
-        <button data-choice="Water" class="types">
-          <img src="images/water-1.png" class="types" />
-        </button>
+        <div class="choice-box">
+          <span class="redText">Fire</span>
+          <img src="images/fire.png" data-choice="Fire" class="choice" />
+        </div>
+        <div class="choice-box">
+          <span class="greenText">Grass</span>
+          <img src="images/grass.png" data-choice="Grass" class="choice" />
+        </div>
+        <div class="choice-box">
+          <span class="blueText">Water</span>
+          <img src="images/water.png" data-choice="Water" class="choice" />
+        </div>
       </div>
       <div id="battle-container">
-        <div id="player-section">
-          <img src="images/red.png" class="players-pokemon" alt="trainer-red" />
-          <div id="player-pokemon">
+        <div class="player-rival-section">
+          <div class="trainer-box">
+            <img src="images/red.png" class="trainer-img" alt="trainer-red" />
+          </div>
+
+          <div class="trainer-pokemon-box">
             <p>Player's Pokemon</p>
             <img
               src="images/hidden1.png"
-              class="players-pokemon"
+              class="pokemon-img"
               alt="whos-that-pokemon-player"
             />
           </div>
@@ -51,24 +54,23 @@
           <p>Player Score: 0 | Rival Score: 0</p>
           <p>Battle description</p>
         </div>
-        <div id="rival-section">
-          <img
-            src="images/blue.png"
-            class="players-pokemon"
-            alt="trainer-blue"
-          />
-          <div id="rival-pokemon">
+        <div class="player-rival-section">
+          <div class="trainer-box">
+            <img src="images/blue.png" class="trainer-img" alt="trainer-blue" />
+          </div>
+
+          <div class="trainer-pokemon-box">
             <p>Rival's Pokemon</p>
             <img
               src="images/hidden2.png"
-              class="players-pokemon"
+              class="pokemon-img"
               alt="whos-that-pokemon-rival"
             />
           </div>
         </div>
       </div>
     </main>
-    <footer id="">
+    <footer id="footer">
       <p>
         <a href="https://github.com/vzMars"
           ><img
