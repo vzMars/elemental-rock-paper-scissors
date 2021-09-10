@@ -23,21 +23,19 @@ body {
 }
 
 #pokemon-logo {
-  max-width: 80%;
+  width: 300px;
   margin-top: 10px;
   padding: 10px;
 }
 
 h1 {
   font-size: 40px;
-  text-align: center;
   margin: 0;
   color: var(--black);
 }
 
 h2 {
   font-size: 30px;
-  text-align: center;
   margin: 0;
   color: var(--black);
 }
@@ -65,7 +63,6 @@ h2 {
 
 #player-choice-container {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -74,12 +71,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin: 0 5px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .choice {
   max-width: 100%;
-  height: auto;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -87,8 +83,8 @@ h2 {
 #battle-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-top: 20px;
   text-align: center;
 }
@@ -98,28 +94,25 @@ h2 {
   border-radius: 5px;
   display: flex;
   background-color: var(--grayBG);
+  height: 250px;
+  width: 265px;
 }
 
-.trainer-box {
-  display: flex;
-}
-
-.trainer-img {
-  max-width: 100%;
-  height: auto;
-  padding: 5px;
-}
-
-.trainer-pokemon-box {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  padding: 5px;
+#trainer-img {
+  width: 100px;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .pokemon-img {
-  max-width: 100%;
-  height: auto;
+  width: 120px;
+  margin-top: 60px;
+  padding: 10px;
+}
+
+#rival-img {
+  width: 90px;
+  padding: 15px;
 }
 
 #footer {
@@ -143,3 +136,148 @@ h2 {
   max-width: 10%;
   height: auto;
 }
+
+@media (min-width: 768px) {
+  #pokemon-logo {
+    width: 600px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .choice-box {
+    font-size: 40px;
+  }
+
+  .choice {
+    width: 150px;
+  }
+
+  #battle-container {
+    flex-direction: row;
+  }
+
+  .player-rival-section {
+    height: 350px;
+    width: 300px;
+  }
+
+  #battle-section {
+    padding: 10px;
+  }
+
+  #trainer-img {
+    width: 140px;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .pokemon-img {
+    width: 150px;
+    margin-top: 80px;
+    margin-right: 15px;
+    padding: 0;
+  }
+
+  #rival-img {
+    width: 130px;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  #pokemon-logo {
+    width: 800px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  .choice-box {
+    font-size: 50px;
+  }
+
+  .choice {
+    width: 200px;
+  }
+
+  #battle-container {
+    flex-direction: row;
+  }
+
+  .player-rival-section {
+    height: 450px;
+    width: 400px;
+  }
+
+  #trainer-img {
+    width: 190px;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .pokemon-img {
+    width: 190px;
+    margin-top: 100px;
+    margin-right: 15px;
+    padding: 0;
+  }
+
+  #rival-img {
+    width: 170px;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  #footer {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #pokemon-logo {
+    width: 900px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
+
+  #main-content {
+    align-self: center;
+    width: 1000px;
+  }
+
+  #footer {
+    font-size: 35px;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
