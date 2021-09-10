@@ -6,12 +6,16 @@
   --green: rgb(35, 136, 66);
   --blue: rgb(25, 175, 228);
   --black: rgb(0, 0, 0);
+  --yellow: rgb(255, 203, 5);
+  --darkBlue: rgb(58, 93, 168);
 }
 
 body {
   font-family: "Skranji", cursive;
   margin: 0;
-  background-color: var(--redBG);
+  background-color: var(--yellow);
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -31,13 +35,13 @@ body {
 h1 {
   font-size: 40px;
   margin: 0;
-  color: var(--black);
+  color: var(--darkBlue);
 }
 
 h2 {
   font-size: 30px;
   margin: 0;
-  color: var(--black);
+  color: var(--darkBlue);
 }
 
 .redText {
@@ -56,7 +60,7 @@ h2 {
   background-color: var(--whiteBG);
   margin: 15px;
   padding: 10px;
-  border: 1px solid var(--whiteBG);
+  border: 1px solid var(--black);
   border-radius: 5px;
   margin-bottom: 5px;
 }
@@ -115,6 +119,17 @@ h2 {
   padding: 15px;
 }
 
+#playAgain {
+  background-color: var(--darkBlue);
+  color: var(--yellow);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 #footer {
   display: flex;
   flex-direction: row;
@@ -123,18 +138,21 @@ h2 {
   text-align: center;
   bottom: 0;
   width: 100%;
-  color: var(--black);
+  color: var(--darkBlue);
   font-size: 15px;
 }
 
 #footer a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--darkBlue);
 }
 
 #logo {
-  max-width: 10%;
+  width: 30px;
   height: auto;
+  margin: 5px;
+  filter: invert(30%) sepia(99%) saturate(579%) hue-rotate(188deg)
+    brightness(90%) contrast(85%);
 }
 
 @media (min-width: 768px) {
@@ -245,6 +263,12 @@ h2 {
   #footer {
     font-size: 25px;
   }
+
+  #logo {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -267,6 +291,12 @@ h2 {
 
   #footer {
     font-size: 35px;
+  }
+
+  #logo {
+    width: 50px;
+    height: auto;
+    margin: 5px;
   }
 }
 
