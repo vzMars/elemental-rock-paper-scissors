@@ -62,7 +62,9 @@ function resetUI() {
   battle = 0;
   battleDescription = "Red vs Blue";
   playerPokemon.src = "/images/hidden1.png";
+  playerBG.style.backgroundColor = "var(--grayBG)";
   rivalPokemon.src = "/images/hidden2.png";
+  rivalBG.style.backgroundColor = "var(--grayBG)";
   updateUI();
   playAgain.style.display = "none";
 }
