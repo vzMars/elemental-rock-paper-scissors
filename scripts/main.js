@@ -44,13 +44,13 @@ function updateUI() {
 
 function updateBattleContainer(image, selection, bgSelection) {
   if (selection === "Fire") {
-    image.src = "/images/2.png";
+    image.src = "images/2.png";
     bgSelection.style.backgroundColor = "var(--red)";
   } else if (selection === "Grass") {
-    image.src = "/images/1.png";
+    image.src = "images/1.png";
     bgSelection.style.backgroundColor = "var(--green)";
   } else {
-    image.src = "/images/3.png";
+    image.src = "images/3.png";
     bgSelection.style.backgroundColor = "var(--blue)";
   }
 }
@@ -61,9 +61,9 @@ function resetUI() {
   playerScore = 0;
   battle = 0;
   battleDescription = "Red vs Blue";
-  playerPokemon.src = "/images/hidden1.png";
+  playerPokemon.src = "images/hidden1.png";
   playerBG.style.backgroundColor = "var(--grayBG)";
-  rivalPokemon.src = "/images/hidden2.png";
+  rivalPokemon.src = "images/hidden2.png";
   rivalBG.style.backgroundColor = "var(--grayBG)";
   updateUI();
   playAgain.style.display = "none";
