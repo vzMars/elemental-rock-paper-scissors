@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(222, 222, 222);
+  --gray: rgb(88, 88, 88);
+  --redBG: rgb(219, 10, 45);
+  --red: rgb(217, 33, 41);
+  --darkBlue: rgb(58, 93, 168);
+  --blue: rgb(25, 175, 228);
+  --green: rgb(35, 136, 66);
+  --yellow: rgb(255, 203, 5);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Skranji', cursive;
+  background-color: var(--yellow);
+  font-size: 2rem;
+}
+
+main,
+main section {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+main section {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 1rem;
+  max-width: 110rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+header img {
+  width: 60%;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: var(--darkBlue);
+}
+
+.redText {
+  color: var(--red);
+}
+
+.greenText {
+  color: var(--green);
+}
+
+.blueText {
+  color: var(--blue);
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.choice-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.choice {
+  max-width: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.player-rival-section {
+  border: 3px solid var(--black);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  height: 50rem;
+}
+
+.trainer-rival,
+.pokemon-img {
+  max-width: 20rem;
+  padding: 1rem;
+}
+
+#playAgain {
+  background-color: var(--darkBlue);
+  color: var(--yellow);
+  padding: 1rem 3rem;
+  border: 1px solid var(--darkBlue);
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
